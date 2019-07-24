@@ -30,9 +30,11 @@ form.addEventListener('submit', e => {
 //delete todos
 
 list.addEventListener('click', e => {
-    if(e.target.classlist.contains('delete')){
+    if(e.target.clssList.contains('delete')){
         e.target.parentElement.remove();
     }
 
     // console.log(e.target.classlist);
 });
+
+// console.log(list.querySelectorAll('li'));
